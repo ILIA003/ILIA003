@@ -6,3 +6,22 @@ print(sys.platform)
 print(2 **100)
 x = 'spam!'
 print(x * 8)
+print(123 + 222)
+print(1.5 * 4)
+print(2 ** 100)
+print(3.1415 * 2)
+print('Hello world!') # print -- это функция
+age = 26
+name = 'Swaroop'
+print('Возраст {0} -- {1} лет.'.format(name, age))
+print('Почему {0} забавляется с этим Python?'.format(name))
+i = 5
+print(i)
+i = i + 1
+print(i)
+s = ''' Это многострочная строка. Это вторая её строчка.'''
+print(s)
+w = 11
+print(w)
+w = 10 + w
+print(w)
