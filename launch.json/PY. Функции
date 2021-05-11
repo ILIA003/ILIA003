@@ -43,13 +43,16 @@ print("Значение х составляет", x) # я глобально з�
 def func_outher():
     z = 2
     print("z равно", z)
-
     def func_inner():
         nonlocal z
         z = 5
-
     func_inner()
     print("Локальное z сменилось на", z)
 
 func_outher()
 
+def say(message, times = 1):
+    print(message * times)
+
+say("Привет")
+say("Мир", 5)
