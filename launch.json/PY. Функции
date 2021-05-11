@@ -11,11 +11,45 @@ def printMax(a, b):
     elif a == b:
         print(a, "равно", b)
     else:
-        print(b, "максимально")
+        print(b, "минимально")
 
 printMax(3, 4)
 
-x = 5
+x = 10
 y = 7
 
 printMax(x, y)
+
+def func(x):
+    print("x равен", x)
+    x = 2
+    print("Замена локального x на", x)
+
+func(x)
+print("х по прежнему")
+
+x = 50
+
+def func():
+    global x
+
+    print("х равно", x)
+    x = 2
+    print("Заменяем глобальное значение х на", x)
+
+func()
+print("Значение х составляет", x) # я глобально зарезервирововал слово, но пока хз что это значит
+
+def func_outher():
+    z = 2
+    print("z равно", z)
+
+    def func_inner():
+        nonlocal z
+        z = 5
+
+    func_inner()
+    print("Локальное z сменилось на", z)
+
+func_outher()
+
