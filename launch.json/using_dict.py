@@ -1,11 +1,11 @@
-ab = {"Swaroop" : "swaroop@swaroopch.com",
+ab = {"Swaroop" : "swaroop@swaroopch.com", # создаю словарь аb
             "Larry" : "larry@wall.org",
             "Matsumoto" : "matz@ruby-lang.org",
             "Spammer" : "spammer@hotmail.com"
         }
 print("Адрес Swaroop'a:", ab["Swaroop"])
 
-del ab["Spammer"]
+del ab["Spammer"] # удаление пары ключей
 
 print("\nВ адресной строке {0} контакта\n".format(len(ab)))
 
