@@ -6,4 +6,4 @@ class Person:
         print('Привет! Меня зовут', self.name)
 
 p = Person('Swaroop')
-p.say_hi()        
+p.say_hi()
