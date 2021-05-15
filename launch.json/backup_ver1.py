@@ -1,11 +1,11 @@
 import os
 import time
 
-source = ['"C:\\My Documents"', 'C:\\Code']
+source = ["C:\\Users\Общие"] # прописываю свой путь
 
-target_dir = 'E:\\Backup'
+target_dir = 'zip -qr C:\Program . -i Files\GnuWin32\20210515161602.zip' # прописываю свой путь, далее появляется ошибка и я копирую из терминала и вставляю сюда
 
-target = target_dir + os.sep + time.strftime('%Y%m%d%H%M%S') + '.zip'
+target = target_dir + os.sep + time.strftime('%Y%m%d%H%M%S')  + '.zip'
 
 zip_command = "zip -qr {0} {1}".format(target, '  '.join(source))
 
