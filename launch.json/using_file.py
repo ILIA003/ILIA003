@@ -1,3 +1,6 @@
+from typing import Any
+
+
 poem = '''\
 Программировать весело.
 Если работа скучна,
@@ -9,8 +12,8 @@ f.write(poem) # записываю файл
 f.close() # закрываю файл
 
 while True:
-    line = f.readline( )
-    if len(line) == 1:
+    line = f.readline()
+    if len(line) == 0:
         break
     print(line, end=' ')
 
