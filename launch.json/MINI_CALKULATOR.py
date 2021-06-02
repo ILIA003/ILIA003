@@ -7,3 +7,4 @@ elif a == "-":
     print(b - d)
 else:
     print("Неверно")
+v = input()
